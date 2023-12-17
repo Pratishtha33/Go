@@ -1,7 +1,7 @@
-package leavedatastore
+package datastore
 
 import (
-	"simple-rest-api/model"
+	"xyz/model"
 
 	"gofr.dev/pkg/gofr"
 )

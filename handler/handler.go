@@ -1,4 +1,4 @@
-package leavemanagementhandler
+package handler
 
 import (
 	"strconv" // // Package strconv implements conversions to and from string representations
@@ -8,8 +8,8 @@ import (
 	// with additional information.
 	"gofr.dev/pkg/gofr"  // Package gofr is a custom package that likely provides utility functions
 
-	"simple-rest-api/datastore"  // The "simple-rest-api/datastore" package contains implementations of data storage and retrieval for the application
-	"simple-rest-api/model"
+	"xyz/datastore"  // The "simple-rest-api/datastore" package contains implementations of data storage and retrieval for the application
+	"xyz/model"
 )
 
 type handler struct {
