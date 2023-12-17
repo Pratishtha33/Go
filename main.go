@@ -1,8 +1,8 @@
 package main
 
 import (
-	"simple-rest-api/leavedatastore"         // Import the leave datastore package.
-	"simple-rest-api/leavemanagementhandler" // Import the leave management handler package.
+	"xyz/datastore"         // Import the leave datastore package.
+	"xyz/handler" // Import the leave management handler package.
 
 	"gofr.dev/pkg/gofr"
 )
@@ -12,10 +12,10 @@ func main() {
 	app := gofr.New()
 
 	// Create a new instance of the employee leave datastore.
-	s := leavedatastore.New()
+	s := datastore.New()
 
 	// Create a new instance of the employee leave management handler.
-	h := leavemanagementhandler.New(s)
+	h := handler.New(s)
 
 	
 	// different HTTP methods to perform CRUD operations

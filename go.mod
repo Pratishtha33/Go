@@ -1,4 +1,4 @@
-module simple-rest-api
+module xyz
 
 go 1.21.3
 
