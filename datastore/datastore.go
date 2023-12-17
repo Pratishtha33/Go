@@ -1,67 +1,80 @@
-package datastore
+package leavedatastore
 
 import (
-	"strconv"
 	"database/sql"
+	"strconv"
+
 	"gofr.dev/pkg/errors"
 	"gofr.dev/pkg/gofr"
 
 	"simple-rest-api/model"
 )
 
-type student struct{}
+// leave is a struct representing the data store for leaves
+type leave struct{}
 
-func New() *student {
-	return &student{}
+// New creates a new instance of the leave data store
+func New() *leave {
+	return &leave{}
 }
 
-func (s *student) GetByID(ctx *gofr.Context, id string) (*model.Student, error) {
-	var resp model.Student
+// GetByID retrieves a leave record by its ID.
+func (s *leave) GetByID(ctx *gofr.Context, id string) (*model.Leave, error) {
+	var resp model.Leave
 
-	query := "SELECT id, name, age, class FROM students WHERE id=" + id
+	// Construct the SQL query to fetch a leave record by ID.
+	query := "SELECT id, employee_id, start_date, end_date, reason FROM Leaves WHERE id=" + id
 
+	// Execute the query and scan the result into the leave model.
 	err := ctx.DB().QueryRowContext(ctx, query).
-		Scan(&resp.ID, &resp.Name, &resp.Age, &resp.Class)
+		Scan(&resp.ID, &resp.EmployeeID, &resp.StartDate, &resp.EndDate, &resp.Reason)
 
 	switch err {
 	case sql.ErrNoRows:
-		return &model.Student{}, errors.EntityNotFound{Entity: "student", ID: id}
+		return &model.Leave{}, errors.EntityNotFound{Entity: "leave", ID: id}
 	case nil:
 		return &resp, nil
 	default:
-		return &model.Student{}, err
+		return &model.Leave{}, err
 	}
 }
 
-func (s *student) Create(ctx *gofr.Context, student *model.Student) (*model.Student, error) {
-	var resp model.Student
- 
-	err := ctx.DB().QueryRowContext(ctx, "INSERT INTO students (name, age, class) VALUES (?, ?, ?);", student.Name, student.Age, student.Class).Scan(&resp.ID, &resp.Name, &resp.Age, &resp.Class)
- 
+// Create adds a new leave record to the data store.
+func (s *leave) Create(ctx *gofr.Context, leave *model.Leave) (*model.Leave, error) {
+	var resp model.Leave
+
+	// Insert a new leave record into the database.
+	err := ctx.DB().QueryRowContext(ctx, "INSERT INTO leaves (employee_id, start_date, end_date, reason) VALUES (?, ?, ?, ?);", leave.EmployeeID, leave.StartDate, leave.EndDate, leave.Reason).
+		Scan(&resp.ID, &resp.EmployeeID, &resp.StartDate, &resp.EndDate, &resp.Reason)
+
 	if err != nil {
-	   return &model.Student{}, errors.DB{Err: err}
+		return &model.Leave{}, errors.DB{Err: err}
 	}
- 
+
 	return &resp, nil
- }
-
- func (s *student) Update(ctx *gofr.Context, student *model.Student) (*model.Student, error) {
-    query := "UPDATE students SET name='" + student.Name + "', age=" + strconv.Itoa(student.Age) +
-        ", class='" + student.Class + "' WHERE id=" + strconv.Itoa(student.ID)
-
-    _, err := ctx.DB().ExecContext(ctx, query)
-    if err != nil {
-        return &model.Student{}, errors.DB{Err: err}
-    }
-
-    return student, nil
 }
 
+// Update modifies an existing leave record in the data stor
+func (s *leave) Update(ctx *gofr.Context, leave *model.Leave) (*model.Leave, error) {
+	// Construct the SQL query to update a leave record.
+	query := "UPDATE leaves SET start_date='" + leave.StartDate + "', end_date='" + leave.EndDate +
+		"', reason='" + leave.Reason + "' WHERE id=" + strconv.Itoa(leave.ID)
 
+	// Execute the update query
+	_, err := ctx.DB().ExecContext(ctx, query)
+	if err != nil {
+		return &model.Leave{}, errors.DB{Err: err}
+	}
 
-func (s *student) Delete(ctx *gofr.Context, id int) error {
-	query := "DELETE FROM students WHERE id=" + strconv.Itoa(id)
+	return leave, nil
+}
 
+// Delete removes a leave record from the data store by its ID.
+func (s *leave) Delete(ctx *gofr.Context, id int) error {
+	// Construct the SQL query to delete a leave record by ID.
+	query := "DELETE FROM leaves WHERE id=" + strconv.Itoa(id)
+
+	// Execute the delete query.
 	_, err := ctx.DB().ExecContext(ctx, query)
 	if err != nil {
 		return errors.DB{Err: err}
