@@ -53,3 +53,8 @@ Before running the project, ensure you have the following installed:
 4. Delete
 
 ![WhatsApp Image 2023-12-17 at 15 14 37_065f6d8c](https://github.com/Pratishtha33/Go/assets/77717155/df849497-df9e-433b-b997-af9e4945d297)
+
+
+# Sequence diagram
+
+![WhatsApp Image 2023-12-17 at 15 38 39_6de52914](https://github.com/Pratishtha33/Go/assets/77717155/254409c2-d52e-4a36-a6fd-278cf6362077)
