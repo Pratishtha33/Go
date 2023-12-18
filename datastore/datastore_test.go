@@ -14,12 +14,12 @@ import (
 type MockDB struct{}
 
 func (db *MockDB) QueryRowContext(ctx *gofr.Context, query string, args ...interface{}) *sql.Row {
-	
+
 	return nil
 }
 
 func (db *MockDB) ExecContext(ctx *gofr.Context, query string, args ...interface{}) (sql.Result, error) {
-	
+
 	return nil, nil
 }
 

@@ -1,7 +1,6 @@
 package handler
 
 import (
-	"errors"
 	"testing"
 
 	"gofr.dev/model"
@@ -12,7 +11,7 @@ import (
 type MockLeaveStore struct{}
 
 func (s *MockLeaveStore) GetByID(ctx *gofr.Context, id string) (*model.Leave, error) {
-	
+
 	return nil, nil
 }
 
@@ -94,5 +93,3 @@ func TestDelete(t *testing.T) {
 		t.Errorf("Unexpected error: %v", err)
 	}
 }
-
-
