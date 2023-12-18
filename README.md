@@ -62,6 +62,9 @@ Before running the project, ensure you have the following installed:
 
 # Sequence diagram
 
+▶️ Client sends a request to the server
+
+◀️ Server sends a response back to the client
 ![WhatsApp Image 2023-12-17 at 15 38 39_6de52914](https://github.com/Pratishtha33/Go/assets/77717155/ebf25a9d-7b53-4b75-8a0c-45e7a7aad8dd)
 
 # Unit Test Coverage
