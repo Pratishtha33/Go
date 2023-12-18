@@ -22,14 +22,15 @@ Before running the project, ensure you have the following installed:
    ```bash
    git clone https://github.com/Pratishtha33/Go.git
 
-2. ```bash
+2. change the directory
+   ```bash
    cd .\Go
 
-3. Install Dependencies:
+4. Install Dependencies:
    ```bash
    go get -u ./...
 
-4. Build and Run the Application:
+5. Build and Run the Application:
    ```bash
    go run main.go
 
@@ -66,12 +67,12 @@ Before running the project, ensure you have the following installed:
 # Unit Test Coverage
 - Run the following commands to test the coverage, here's a 100% coverage
 
- ```bash
-go test ./handler
+1. Test Handler:
+   ```bash
+     go test ./handler
 
- ```bash
-
-go test ./datastore
-
+2.  Test Datastore: 
+    ```bash
+     go test ./datastore
 
 
