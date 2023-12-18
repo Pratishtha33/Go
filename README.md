@@ -40,7 +40,7 @@ Before running the project, ensure you have the following installed:
 # Postman collection for trying out the APIs
 
    
-![Alt Text](https://github.com/Pratishtha33/Go/blob/main/img/WhatsApp%20Image%202023-12-17%20at%2015.14.19_35c4ed4a.jpg)
+![image](https://github.com/Pratishtha33/Go/blob/main/img/WhatsApp%20Image%202023-12-17%20at%2015.14.19_35c4ed4a.jpg)
 
 
 
