@@ -57,4 +57,4 @@ Before running the project, ensure you have the following installed:
 
 # Sequence diagram
 
-![WhatsApp Image 2023-12-17 at 15 38 39_6de52914](https://github.com/Pratishtha33/Go/assets/77717155/254409c2-d52e-4a36-a6fd-278cf6362077)
+![WhatsApp Image 2023-12-17 at 15 38 39_6de52914](https://github.com/Pratishtha33/Go/assets/77717155/ebf25a9d-7b53-4b75-8a0c-45e7a7aad8dd)
