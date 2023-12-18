@@ -38,7 +38,8 @@ Before running the project, ensure you have the following installed:
 ## Gofr
 - GoFr seamlessly integrates with GORM for efficient database management. GoFr has ingeniously incorporated various datastores, including PostgreSQL, Redis, MongoDB, SQL and Cassandra, simplifying the process of connecting to and managing different databases.
 
-# project functionalities:
+# 🚀  Project Functionalities:
+
 
 ## Overview
 
@@ -117,7 +118,7 @@ The codebase is organized into several packages, each serving a specific purpose
   - `EndDate`: End date of the leave.
   - `Reason`: Reason for taking the leave.
 
-# Postman collection for trying out the APIs
+# 🔧 Postman collection for trying out the APIs
 1. Update
 
 ![WhatsApp Image 2023-12-17 at 15 14 19_35c4ed4a](https://github.com/Pratishtha33/Go/assets/77717155/b272dded-ddf4-4b73-807c-78913b15fa9a)
@@ -135,7 +136,7 @@ The codebase is organized into several packages, each serving a specific purpose
 ![WhatsApp Image 2023-12-17 at 15 14 37_065f6d8c](https://github.com/Pratishtha33/Go/assets/77717155/df849497-df9e-433b-b997-af9e4945d297)
 
 
-# Sequence diagram
+# 📊 Sequence diagram
 
 ▶️ Client sends a request to the server
 
@@ -143,7 +144,7 @@ The codebase is organized into several packages, each serving a specific purpose
 
 ![WhatsApp Image 2023-12-17 at 15 38 39_6de52914](https://github.com/Pratishtha33/Go/assets/77717155/ebf25a9d-7b53-4b75-8a0c-45e7a7aad8dd)
 
-# Unit Test Coverage
+#  🚦 Unit Test Coverage
 :white_check_mark: Run the tests to ensure everything is working correctly.
 
 
