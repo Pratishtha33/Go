@@ -40,7 +40,82 @@ Before running the project, ensure you have the following installed:
 
 # project functionalities:
 
+## Overview
 
+The Employee Leave Management System is an HTTP API that facilitates the management of employee leaves. It provides endpoints to perform CRUD operations on leave records, allowing employee handle employee leave requests.
+
+## Code Structure
+
+The codebase is organized into several packages, each serving a specific purpose:
+
+- **datastore:** Implements the data storage and retrieval logic for leave records.
+- **handler:** Defines HTTP handlers for processing leave-related requests.
+- **model:** Contains data models representing the entities used in the system.
+
+## Packages
+
+### datastore
+
+#### `leave` Struct
+
+- Represents the data store for leave records.
+
+#### `New()` Function
+
+- Creates a new instance of the leave data store.
+
+#### `GetByID` Function
+
+- Retrieves a leave record by its ID from the data store.
+
+#### `Create` Function
+
+- Adds a new leave record to the data store.
+
+#### `Update` Function
+
+- Modifies an existing leave record in the data store.
+
+#### `Delete` Function
+
+- Removes a leave record from the data store by its ID.
+
+#### `handler` Struct
+
+- Implements HTTP handlers for processing leave-related requests.
+
+#### `New()` Function
+
+- Creates a new instance of the leave management handler.
+
+#### `GetByID` Function
+
+- Handles GET requests to retrieve leave details by ID.
+
+#### `Create` Function
+
+- Handles POST requests to create a new leave record.
+
+#### `Update` Function
+
+- Handles PUT requests to update an existing leave record.
+
+#### `Delete` Function
+
+- Handles DELETE requests to delete a leave record.
+
+## Model
+
+### `Leave` Struct
+
+- Represents the data model for a leave record.
+
+- Fields:
+  - `ID`: Unique identifier for the leave record.
+  - `EmployeeID`: Identifier of the associated employee.
+  - `StartDate`: Start date of the leave.
+  - `EndDate`: End date of the leave.
+  - `Reason`: Reason for taking the leave.
 
 # Postman collection for trying out the APIs
 1. Update
