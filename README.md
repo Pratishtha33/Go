@@ -39,8 +39,10 @@ Before running the project, ensure you have the following installed:
 
 # Postman collection for trying out the APIs
 
-   
-![image](https://github.com/Pratishtha33/Go/blob/main/img/WhatsApp%20Image%202023-12-17%20at%2015.14.19_35c4ed4a.jpg)
+![WhatsApp Image 2023-12-17 at 15 14 19_35c4ed4a](https://github.com/Pratishtha33/Go/assets/77717155/b272dded-ddf4-4b73-807c-78913b15fa9a)
 
+![WhatsApp Image 2023-12-17 at 15 15 50_df87a6e5](https://github.com/Pratishtha33/Go/assets/77717155/0066ab51-a851-40cf-888b-6a42ce2a21a9)
 
+![WhatsApp Image 2023-12-17 at 15 16 31_12d45f5f](https://github.com/Pratishtha33/Go/assets/77717155/4bab2e92-d4ac-4c49-a4aa-43f19795ef88)
 
+![WhatsApp Image 2023-12-17 at 15 14 37_065f6d8c](https://github.com/Pratishtha33/Go/assets/77717155/df849497-df9e-433b-b997-af9e4945d297)
