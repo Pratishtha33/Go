@@ -1,6 +1,6 @@
 # Employee Leave Management API
 
-The Employee Leave Management System API is a Go language HTTP API built using the GoFr framework. It provides endpoints for managing employee leaves, including operations such as creating a leave request, updating leave details, retrieving leave information, and deleting leave records.
+The Employee Leave Management API is a Go language HTTP API built using the GoFr framework. It provides endpoints for managing employee leaves, including operations such as creating a leave request, updating leave details, retrieving leave information, and deleting leave records.
 
 ## Prerequisites
 
@@ -43,7 +43,7 @@ Before running the project, ensure you have the following installed:
 
 ## Overview
 
-The Employee Leave Management System is an HTTP API that facilitates the management of employee leaves. It provides endpoints to perform CRUD operations on leave records, allowing employee handle employee leave requests.
+The Employee Leave Management is an HTTP API that facilitates the management of employee leaves. It provides endpoints to perform CRUD operations on leave records, allowing employee handle employee leave requests.
 
 ## Code Structure
 
