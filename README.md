@@ -65,12 +65,13 @@ Before running the project, ensure you have the following installed:
 ▶️ Client sends a request to the server
 
 ◀️ Server sends a response back to the client
+
 ![WhatsApp Image 2023-12-17 at 15 38 39_6de52914](https://github.com/Pratishtha33/Go/assets/77717155/ebf25a9d-7b53-4b75-8a0c-45e7a7aad8dd)
 
 # Unit Test Coverage
 :white_check_mark: Run the tests to ensure everything is working correctly.
 
-&copy; 2023 My Project
+
 - Run the following commands to test the coverage, here's a 100% coverage
 
 1. Test Handler:
